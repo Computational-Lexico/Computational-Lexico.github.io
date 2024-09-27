@@ -1,1 +1,1 @@
-# Computational-Lexicography.github.io
+# Computational-Lexico.github.io
