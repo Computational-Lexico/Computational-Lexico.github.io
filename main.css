@@ -1,11 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -94,21 +90,21 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-body {
-    background-color: #000000; /* 背景设为黑色 */
-    color: rgba(255, 255, 255, 0.75); /* 确保文字颜色与背景颜色对比良好 */
-}
+	body {
+	background-color: #000000;
+	}/* 颜色 */
 
-/* 其它可能需要修改的地方 */
-#bg:before {
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
-}
+		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+		}
 
-table {
-    background-color: rgba(0, 0, 0, 0.8); /* 如果使用表格，可以考虑设置表格的背景 */
-}
-
-	
 /* Type */
 
 	html {
