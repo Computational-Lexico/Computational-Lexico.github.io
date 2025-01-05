@@ -1,11 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -28,6 +24,139 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+
+
+
+
+
+
+
+#以下为DB2L的页面内容
+
+
+
+
+    #这个代码也行：
+  /*
+body {
+    background: linear-gradient(to bottom, #1b1f22, #1b1f22); /* 背景渐变 */
+    margin: 0; /* 移除默认外边距 */
+    background-color: black; /* 背景颜色 */
+    color: white; /* 字体颜色 */
+    overflow-y: auto; /* 启用滚动 */
+   
+}
+*/
+
+
+body {
+	background: linear-gradient(to bottom, #1b1f22, #1b1f22);
+    display: flex;
+    flex-direction: column; /* 设置垂直方向的布局 */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 确保页面高度始终占满视口 */
+    margin: 0; /* 移除默认的外边距 */
+    background-color: black; /* 背景颜色为黑色 */
+    color: white; /* 设置字体颜色为白色 */
+   overflow: hidden; /* 防止页面内容超出视口 */
+    overflow-y: auto; /* 确保页面可滚动 */
+    font-family: "Source Sans Pro", sans-serif; /* 使用 Source Sans Pro */
+   
+}
+
+
+
+
+#content-container {
+    display: block; /* 改为 block 布局，支持动态高度 */
+    max-width: 800px; /* 限制宽度 */
+    margin: 0 auto; /* 居中内容 */
+    padding: 20px; /* 添加内边距 */
+    background: #1b1f22; /* 背景色 */
+    border: 1px solid #444; /* 可选：边框 */
+    border-radius: 8px; /* 可选：圆角 */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* 可选：阴影 */
+    color: white;
+    min-height: 100vh; /* 确保背景至少覆盖视口高度 */
+    box-sizing: border-box; /* 包含内边距 */
+    flex-grow: 1; /* 内容区占据剩余空间 */
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    #height: auto; /* 确保高度动态扩展 */
+    height: 100%; /* 确保页面和html元素填满整个视口 */
+    overflow-y: auto; /* 启用垂直滚动 */
+    background: #1b1f22; /* 背景色一致 */
+    color: white;
+  
+}
+
+
+
+
+
+#wrapper {
+    width: 100%; /* 确保 wrapper 使用父容器宽度 */
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: auto; /* 自动适应内容高度 */
+}
+
+article {
+    text-align: justify; /* Keeps content justified */
+}
+p {
+    text-align: justify; /* 保持段落对齐 */
+    line-height: 1.6; /* 增加行距，提升可读性 */
+}
+
+h2 {
+    text-align: center; /* 标题居中 */
+    color: #f0f0f0; /* 设置标题颜色 */
+}
+
+a {
+    color: #1e90ff; /* 链接颜色为蓝色 */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative; /* 确保元素不被覆盖 */
+   z-index: 2; /* 提升优先级，确保不会被背景覆盖 */
+}
+
+
+#footer {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中（如果需要的话） */
+    padding: 1rem 0; /* 可选：为 footer 添加上下内边距 */
+    width: 100%; /* 确保 footer 占据整个宽度 */
+    color: #ffffff; /* 设置文本颜色为白色 */
+   
+}
+
+.copyright {
+    margin: 0; /* 移除段落的默认边距 */
+    text-align: center; /* 确保文本内容在段落中居中 */
+}
+
+
+#以上为DB2L页面内容
+
+
+
 
 body {
 	line-height: 1;
