@@ -6,7 +6,6 @@
 	<head>
 		   <link rel="shortcut icon" href="Lexicography.ico" type="image/x-icon" /> 
 			<link rel="icon" href="images/Lexicography.ico" type="image/x-icon"/>
-
 		<title>Computational-Lexico</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -30,17 +29,111 @@
 								<p style="text-align: justify;"> Unlocking the Power of Words: Advancing Knowledge through Computational Lexicology and Lexicography! <br /></p>
 							</div>
 						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Introduction</a></li>
-								<li><a href="#work">Projects</a></li>
-								<li><a href="#Research1">Research Activities</a></li>
-								<li><a href="#Research2">Publications</a></li>
-								<li><a href="#about">Collaboration</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
+		<nav>
+    <ul>
+        <li><a href="#intro">Introduction</a></li>
+
+
+
+        <li>
+            <a href="#work" id="projects-link">Projects</a>
+            <ul id="projects-menu" style="display: none;">
+                <li><a href="db2l.html">DB2L</a></li>
+                <li><a href="digital_lexicography.html">Digital Lexicography</a></li>
+                <li><a href="dicop.html">DiCoP</a></li>
+            </ul>
+        </li>
+
+
+         <li>
+            <a href="#Research1" id="research-link">Research Activities</a>
+            <ul id="research-menu" style="display: none;">
+                <li><a href="symposiums.html">Symposiums</a></li>
+                <li><a href="seminars.html">Seminars</a></li>
+            </ul>
+        </li>
+
+
+        <li>
+            <a href="#Research2" id="publications-link">Publications</a>
+            <ul id="publications-menu" style="display: none;">
+                <li><a href="ouvrages.html">Books</a></li>
+                <li><a href="revues.html">Journals</a></li> 
+                <li><a href="articles.html">Articles</a></li>
+              
+            </ul>
+        </li>
+
+        
+        <li>
+            <a href="#about" id="collaboration-link">Collaboration</a>
+            <ul id="collaboration-menu" style="display: none;">
+                <li><a href="scientifique.html">Collaboration Scientifique</a></li>
+                <li><a href="technique.html">Collaboration Technique</a></li>
+                
+            </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const projectsLink = document.getElementById('projects-link');
+        const projectsMenu = document.getElementById('projects-menu');
+
+        projectsLink.addEventListener('click', function(event) {
+            event.preventDefault(); // 阻止默认的链接行为
+            if (projectsMenu.style.display === 'none' || projectsMenu.style.display === '') {
+                projectsMenu.style.display = 'block'; // 显示菜单
+            } else {
+                projectsMenu.style.display = 'none'; // 隐藏菜单
+            }
+        });
+
+
+const researchLink = document.getElementById('research-link');
+        const researchMenu = document.getElementById('research-menu');
+
+        researchLink.addEventListener('click', function(event) {
+            event.preventDefault(); // 阻止默认的链接行为
+            if (researchMenu.style.display === 'none' || researchMenu.style.display === '') {
+                researchMenu.style.display = 'block'; // 显示菜单
+            } else {
+                researchMenu.style.display = 'none'; // 隐藏菜单
+            }
+        });
+
+
+
+        const publicationsLink = document.getElementById('publications-link');
+        const publicationsMenu = document.getElementById('publications-menu');
+
+        publicationsLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (publicationsMenu.style.display === 'none' || publicationsMenu.style.display === '') {
+                publicationsMenu.style.display = 'block'; // 显示菜单
+            } else {
+                publicationsMenu.style.display = 'none'; // 隐藏菜单
+            }
+        });
+
+        const collaborationLink = document.getElementById('collaboration-link');
+        const collaborationMenu = document.getElementById('collaboration-menu');
+
+        collaborationLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (collaborationMenu.style.display === 'none' || collaborationMenu.style.display === '') {
+                collaborationMenu.style.display = 'block'; // 显示菜单
+            } else {
+                collaborationMenu.style.display = 'none'; // 隐藏菜单
+            }
+        });
+    });
+</script>
+
+
+
 					</header>
 
 				<!-- Main -->
@@ -608,7 +701,7 @@ ELIADD, Franche-Comté University</td>
 								DO-HURINVILLE Danh-Thành, danh_thanh.do-hurinville@univ-fcomte.fr (ELIADD EA 4661 (University of Franche-Comté) <br/>
 								<br/>
 
-								GENG Yundong 耿云冬, benedict_geng@mail.hzau.edu.cn (School of Foreign Languages ​​- Huazhong Agricultural University, China)<br>
+								GENG Yundong 耿云冬, benedict_geng@mail.hzau.edu.cn (School of Foreign Languages ​​- Huazhong University, China)<br>
 								 </p>
 						</article>
 
@@ -889,8 +982,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Created by <a href="https://lianchen.fr/">CHEN Lian 陈恋</a> from HTML5 + CSS3</a>.</p>
-						
+						 <p class="copyright">&copy; Created by <a href="https://lianchen.fr/">CHEN Lian 陈恋</a> from HTML5 + CSS3 + JAVAScript</p>
 					</footer>
 
 			</div>
