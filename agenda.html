@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="shortcut icon" href="Lexicography.ico" type="image/x-icon" />
+    <link rel="icon" href="images/Lexicography.ico" type="image/x-icon" />
+    <title>Agenda - Computational-Lexico</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 45px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.2s, box-shadow 0.2s;
+        }
+
+        #close-button:hover {
+            color: #808080;
+        }
+
+        #calendar {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        #calendar header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #calendar table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #calendar th,
+        #calendar td {
+            width: 14.28%;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        #calendar th {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        #calendar td {
+            height: 100px;
+            vertical-align: top;
+            position: relative;
+        }
+
+        #calendar td.event {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+
+        .event-text {
+            font-size: 14px;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            right: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <div id="content-container">
+        <div id="wrapper">
+
+             <!-- Header -->
+    <header id="header">
+        <div class="content">
+            <div class="inner">
+                <h2>Agenda</h2>
+                <p>Plan your month with upcoming events in Computational Lexicology & Lexicography.</p>
+            </div>
+        </div>
+    </header>
+
+            <!-- Close Button -->
+            <a href="index.html" id="close-button">&times;</a>
+
+
+                
+
+
+                <section id="calendar">
+                    <header>Janvier 2025</header>
+                    <table>
+                        <thead>
+    <tr>
+        <th class="time-column">Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+</thead>
+
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td class="event">11
+                                    <span class="event-text">Workshop</span>
+                                </td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>19</td>
+                                <td class="event">20
+                                    <span class="event-text">Conference</span>
+                                </td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <p class="copyright">&copy; Created by <a href="https://lianchen.fr/">CHEN Lian 陈恋</a> with HTML5 + CSS3 + JavaScript</p>
+            </footer>
+
+        </div>
+    </div>
+    <div id="bg"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        const bgElement = document.getElementById('bg');
+        bgElement.addEventListener('click', function() {
+            window.location.href = 'index.html'; 
+        });
+    </script>
+
+</body>
+</html>
