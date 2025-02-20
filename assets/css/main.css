@@ -29,6 +29,30 @@ footer, header, hgroup, menu, nav, section {
 
 
 
+#以下为agenda时间
+#calendar table {
+    table-layout: fixed;
+}
+
+#calendar th.time-column,
+#calendar td.time-column {
+    width: 10%; /* 定义时间列宽度 */
+    background-color: #f9f9f9;
+    font-weight: bold;
+    text-align: center;
+}
+
+.time-column {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#以上为agenda时间设置
+
+
+
 
 
 #以下为DB2L的页面内容
